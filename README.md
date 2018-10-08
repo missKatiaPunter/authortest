@@ -14,7 +14,7 @@ Tape is known as the ‘bare minimum’ testing framework. As such it is lightwe
 
 Tape produces TAP output. TAP stands for Test Anything Protocol, it is documented here. It was originally designed to test Perl code in the late 1980s. A protocol is a standardised way of doing something, in case of TAP reporting the outcome of unit tests. A classic example of a protocol is meeting the Queen: call her ‘Ma’am’ (like in jam). TAP prescribes the following reporting from a test:
 
-![tap-output](https://user-images.githubusercontent.com/18426161/46637825-cefac600-cb55-11e8-8705-3f7648c1e44f.png)
+![tap-output](https://user-images.githubusercontent.com/18426161/46638140-614f9980-cb57-11e8-8655-7824e9716fb2.png)
 
 ## Setting up the environment
 
