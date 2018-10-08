@@ -19,7 +19,7 @@ Tape produces TAP output. TAP stands for Test Anything Protocol, it is documente
 + **not ok 2**  <message> - means that test 2 failed
 
 
-![tap-output](https://user-images.githubusercontent.com/18426161/46638140-614f9980-cb57-11e8-8655-7824e9716fb2.png)
+![tap-output](https://user-images.githubusercontent.com/18426161/46638963-61ea2f00-cb5b-11e8-9d5c-383f92c53b22.png)
 
 ## Setting up the environment
 
