@@ -1,5 +1,5 @@
 # Documenting Tape
-><small> **Disclosure:** This is a **document authoring recruitment test** for 27 partners.</small>
+><small> **Note:** This is a **document authoring recruitment test** for 27 partners.</small>
 ## What is Tape?
 
 **Tape** is a library for testing JavaScript code. It was written by **James Halliday**, aka [*substack*](https://substack.net/). Full code and the original documentation can be found [*here*](https://github.com/substack/tape).
@@ -18,7 +18,7 @@ Tape produces TAP output. TAP stands for Test Anything Protocol, it is documente
 + **ok 1** <message> - means that test one passed
 + **not ok 2**  <message> - means that test 2 failed
 
-
+The screenshot below shows the output of two successful tests. 
 ![tap-output](https://user-images.githubusercontent.com/18426161/46638963-61ea2f00-cb5b-11e8-9d5c-383f92c53b22.png)
 
 ## Setting up the environment
