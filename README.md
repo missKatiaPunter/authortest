@@ -152,9 +152,9 @@ and in VS Code:
 code .
 ```
 
-Make sure you type these from within your project folder, in the terminal. `pwd` to check if you are in the right folder.
+Make sure you type these from within your project folder, in the terminal. Use `pwd` to check if you are in the right folder.
 
-In order to complete the set up it is important to write your first test. Like all snipets provided above it does not have to be testing any actual code. The example below uses Visual Studio Code and assertion `ok()`:
+In order to complete the set up it is important to write your first test. Like all snippets provided above it does not have to be testing any actual code. The example below uses Visual Studio Code and assertion `ok()`:
 
 ![visual-studio-test1](https://user-images.githubusercontent.com/18426161/46682807-80493c80-cbe6-11e8-8275-9d1fa01d9426.png)
 
