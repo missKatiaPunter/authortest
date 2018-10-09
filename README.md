@@ -79,7 +79,19 @@ throwing the following exception:
 
 ![exception-from-equal](https://user-images.githubusercontent.com/18426161/46675291-00b37180-cbd6-11e8-9217-60ec37153fb0.png)
 
+Even though the expected and actual arrays (outlined in red, above) are identical, they cannot be compared with `equal()`. To compare non-primitive data types (objects or arrays) `deepEqual()` operator must be used.
+
+```js
+test("Testing deep equality assertion", function (t) {
+  var actual = { item: "tape", amount: 3 };
+  var expected = { item: "tape", amount: 3 };
+  t.deepEqual(actual, expected, 'Actual object is equal to expected');
+  t.end();
+});
+```
+The full list of available Tape assertions can be found [*here*](https://github.com/substack/tape).
 
 ## Setting up the environment
+
 
 ## Your first tests
