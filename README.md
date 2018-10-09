@@ -56,7 +56,7 @@ In TAP output test descriptions are preceded by `#`, whereas assertion success m
 
 Boolean assertions are great to introduce the idea, however, as Eric Elliott, the author of “Programming JavaScript Applications” (O'Reilly), points out:
 
-> > “If the only available assertion in every test suite was equal(), almost every test suite in the world would be better for it.”
+> *“If the only available assertion in every test suite was equal(), almost every test suite in the world would be better for it.”*
 
 
 ## Setting up the environment
