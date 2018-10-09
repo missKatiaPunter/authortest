@@ -100,7 +100,7 @@ It is recommended to install Tape globally first. In your terminal type the foll
 ```sh
 npm install tape --g
 ```
-However, in order to start writing and running your own Tape tests you will need to create a project folder, initialise it with `npm init` and include Tape as a dependency for every individual project. You can find a beginner's guilde to dependencies and **using npm** [*here*](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/).
+However, in order to start writing and running your own Tape tests you will need to create a project folder, initialise it with `npm init` and include Tape as a dependency for every individual project. You can find a beginner's guide to dependencies and **using npm** [*here*](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/).
 
 To create your project folder named tests (you can choose a different name) type the following in your terminal:
 
