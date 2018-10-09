@@ -112,6 +112,8 @@ To navigate inside your new folder:
 ```sh
 cd tests
 ```
+The following steps should be done from within your project directory. To make absolutely sure you are in the directory you are planning to use as your project, it is a good to know `pwd` command (print working directory). `pwd` outputs the path to the folder you are currently in, for example `mycomputer/home/tests` means you are currently inside the folder tests.
+
 To initialise your project:
 
 ```sh
@@ -119,5 +121,21 @@ npm init
 ```
 `npm init` will provide a set of questions that you can skip by pressing the return button. 
 
+To set up Tape as the developer's dependency for a specific project:
+
+```sh
+npm install tape --save-dev
+```
+Now you can use `touch` command in your terminal to create the files you need. You will need a file containing your JavaScript code and a file containing your tests. To create your JavaScript file you may use:
+
+```sh
+touch index.js
+```
+And to create your test file:
+
+```sh
+touch index.test.js
+```
+> Note: name.test.js is a naming convention for test files. Following naming convention is optional, but a good practice.
 
 ## Your first tests
