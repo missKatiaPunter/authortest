@@ -52,6 +52,7 @@ test("Check how Boolean assertions work", function (t) {
 
 In TAP output test descriptions are preceded by `#`, whereas assertion success messages follow `ok`.
 
+![tap-ouput-multiple-assertions](https://user-images.githubusercontent.com/18426161/46672458-65b79900-cbcf-11e8-951a-23464a673e2a.png)
 
 ## Setting up the environment
 
