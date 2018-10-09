@@ -202,4 +202,42 @@ function prime(num) {
   return primes;
 }
 ```
-It would work and would even impress (not many know labels, i.e. `loop`). However, testing this code would be a nightmare. To make testing and subsequently debugging easier it is better to split the code into multiple (at least two) functions. 
+It would work and would even impress (not everyone knows labels, i.e. `loop:`). However, testing this code would be difficult. To make testing and subsequently debugging easier it is better to split the code into multiple (at least two) functions.
+
+Here is a basic function that checks for primality:
+
+```js
+function isPrime(n) {
+  for (var i = 2; i <= Math.sqrt(n); i++)
+    if (n % i == 0) return false;
+  return true;
+}
+```
+
+it should be written in your index.js file. In order to make it available in your index.test.js file you need to add `module.exports` statement at the end of your JavaScript file:
+
+```js
+function isPrime(n) {
+  for (var i = 2; i <= Math.sqrt(n); i++)
+    if (n % i == 0) return false;
+  return true;
+}
+module.exports = isPrime;
+```
+Now you need to `require` your module containing function `isPrime(n)` in yout test file. Moreover, you also need to `require` tape in your test file. Your first test will have to have two `require` statements at the start and some tests. Traditionally the first test should check that Tape is working. 
+
+```js
+var test = require("tape");
+var isPrime = require("./index.js");
+
+test("Check how Boolean assertions work", function (t) {
+  t.ok(true, 'True is true');
+  t.end();
+});
+
+test("Check that 7 is a prime number", function (t) {
+  t.ok(isPrime(7), '7 is a prime');
+  t.end();
+});
+```
+Now you can run your first test.
