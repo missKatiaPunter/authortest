@@ -34,11 +34,11 @@ test("Check that true is truthy", function (t) {
   t.end();
 });
 ```
-The code snippet above uses Boolean assertion `ok`. It has a single test and a single assertion. `ok` takes a ***single*** value and a success message as parameters. The test output now displays the custom test description `"Check that true is truthy"` and the success message `"True is true"`:
+The code snippet above uses Boolean assertion `ok()`. It has a single test and a single assertion. `ok()` takes a ***single*** value and a success message as parameters. The test output now displays the custom test description `"Check that true is truthy"` and the success message `"True is true"`:
 
 ![tap-first-boolean](https://user-images.githubusercontent.com/18426161/46670202-7107c600-cbc9-11e8-83ef-02d5c32eae44.png)
 
-You can add multiple assertions to a single test and use `notOk` to check values expected to be falsy. Remember to be mindful of JavaScript [*type coercion*](https://medium.freecodecamp.org/js-type-coercion-explained-27ba3d9a2839) when asserting Booleans.
+You can add multiple assertions to a single test and use `notOk()` to check values expected to be falsy. Remember to be mindful of JavaScript [*type coercion*](https://medium.freecodecamp.org/js-type-coercion-explained-27ba3d9a2839) when asserting Booleans.
 
 ```js
 test("Check how Boolean assertions work", function (t) {
@@ -54,9 +54,30 @@ In TAP output test descriptions are preceded by `#`, whereas assertion success m
 
 ![tap-ouput-multiple-assertions](https://user-images.githubusercontent.com/18426161/46672458-65b79900-cbcf-11e8-951a-23464a673e2a.png)
 
+### Equality assertions
+
 Boolean assertions are great to introduce the idea, however, as Eric Elliott, the author of “Programming JavaScript Applications” (O'Reilly), points out:
 
 > *“If the only available assertion in every test suite was equal(), almost every test suite in the world would be better for it.”*
+
+```js
+test("Testing equality assertion", function (t) {
+  t.equal(4 + 2, 6, 'Working for 4+2=6');
+  t.end();
+});
+```
+
+The snippet above shows a passing test. `equal()` takes two values and a success message as parameters. The values given to `equal()` are expected and actual results. The test below, however, will fail
+
+```js
+test("Testing equality assertion", function (t) {
+  t.equal([1, 2, 3], [1, 2, 3], 'Working for 4+2=6');
+  t.end();
+});
+```
+throwing the following exception:
+
+
 
 
 ## Setting up the environment
