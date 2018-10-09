@@ -93,5 +93,31 @@ The full list of available Tape assertions can be found [*here*](https://github.
 
 ## Setting up the environment
 
+Even though Tape tests can run in a browser, it is easier to start using Tape in **Node.js**. Make sure you have Node, a JavaScript run-time environment that executes JavaScript code outside of a browser. To check whether you have Node installed type `node -v` in your terminal. Expect to see `v` followed by the versions number, i.e. `v10.4.1`. You can download Node and read installation instructions [*here*](https://nodejs.org/en/download/). When you install Node.js, **npm** (Node Package Manager) is automatically installed as well. You can explore **npm** [*here*](https://docs.npmjs.com/) and you will be using it to set up Tape.
+
+It is recommended to install Tape globally first. In your terminal type the following:
+
+```sh
+npm install tape --g
+```
+However, in order to start writing and running your own Tape tests you will need to create a project folder, initialise it with `npm init` and include Tape as a dependency for every individual project. You can find a beginner's guilde to dependencies and **using npm** [*here*](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/).
+
+To create your project folder named tests (you can choose a different name) type the following in your terminal:
+
+```sh
+mkdir tests
+```
+To navigate inside your new folder:
+
+```sh
+cd tests
+```
+To initialise your project:
+
+```sh
+npm init
+```
+`npm init` will provide a set of questions that you can skip by pressing the return button. 
+
 
 ## Your first tests
