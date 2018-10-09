@@ -34,9 +34,18 @@ test("Check that true is truthy", function (t) {
   t.end();
 });
 ```
-The code snippet above uses boolean assertion `ok`. It has a single test and a single assertion. `ok` takes a single value and a success message as parameters.
+The code snippet above uses Boolean assertion `ok`. It has a single test and a single assertion. `ok` takes a ***single*** value and a success message as parameters. The test output:
 
+![tap-first-boolean](https://user-images.githubusercontent.com/18426161/46670202-7107c600-cbc9-11e8-83ef-02d5c32eae44.png)
 
+You can add multiple assertions to a single test:
+
+```js
+test("Check that true is truthy", function (t) {
+  t.ok(true, 'True is true');
+  t.end();
+});
+```
 ## Setting up the environment
 
 ## Your first tests
