@@ -12,10 +12,10 @@ function addTwoAndThree() {
 ```
 Tape is known as the ‘bare minimum’ testing framework. As such it is lightweight, with no configuration required and free from global variables such as `describe`. Tests produced with Tape are JavaScript files and can run in Node or in a browser.
 
-Tape produces **TAP output**. **TAP** stands for **Test Anything Protocol**; it is documented [*here*](https://testanything.org/). It was originally designed to test Perl code in the late 1980s. A protocol is a standardised way of doing something, in case of TAP reporting the outcome of unit tests. A classic example of a protocol is meeting the Queen: call her ‘Ma’am’ (like in *"jam"*). TAP prescribes the following reporting from a test:
+Tape produces **TAP output**. **TAP** stands for **Test Anything Protocol**; it is documented [*here*](https://testanything.org/). It was originally designed to test Perl code in the late 1980s. A protocol is a standardised way of doing something, in the case of TAP - reporting the outcome of unit tests. A classic example of a protocol is meeting the Queen: call her ‘Ma’am’ (like in *"jam"*). TAP prescribes the following reporting from a test:
 
 + 1..***n*** reports the number of tests run with n being the number of tests
-+ **ok 1** <message> - means that the frst test was successful
++ **ok 1** <message> - means that the first test was successful
 + **not ok 2**  <message> - means that the second test failed
 
 The screenshot below shows the TAP output produced by running two successful tests. The words ‘Test description’ are placeholders, here the test author should write concise and meaningful explanations of functionality being tested.
@@ -56,7 +56,7 @@ In TAP output test descriptions are preceded by `#`, whereas assertion success m
 
 ### Equality assertions
 
-Boolean assertions are great to introduce the idea, however, as Eric Elliott, the author of “Programming JavaScript Applications” (O'Reilly), points out:
+Boolean assertions are great to introduce the idea. However, as Eric Elliott, the author of “Programming JavaScript Applications” (O'Reilly), points out:
 
 > *“If the only available assertion in every test suite was equal(), almost every test suite in the world would be better for it.”*
 
