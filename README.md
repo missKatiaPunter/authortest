@@ -26,16 +26,16 @@ Failing tests will produce exceptions, messages outlining why tests were not suc
 
 Another limitation of Tape and TAP is a small number of built-in assertions. Built-in assertions are methods included in the testing library that allow to compare the expected outcome of a unit with its actual outcome.
 
-### Boolean assertions included in Tape
+### Boolean assertions
 
 ```js
-var test = require("tape");
-
 test("Check that true is truthy", function (t) {
   t.ok(true, 'True is true');
   t.end();
 });
 ```
+The code snippet above uses boolean assertion `ok`. It has a single test and a single assertion. `ok` takes a single value and a success message as parameters.
+
 
 ## Setting up the environment
 
