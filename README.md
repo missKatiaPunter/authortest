@@ -158,6 +158,22 @@ In order to complete the set up it is important to write your first test. Like a
 
 ![visual-studio-test1](https://user-images.githubusercontent.com/18426161/46682807-80493c80-cbe6-11e8-8275-9d1fa01d9426.png)
 
+In order to run the test type the following in your terminal (from within the project folder,`pwd` to check):
+
+```sh
+node index.test.js
+```
+Your should see the TAP output of your first test. Remember that file name should be whatever you named your file.
+
+Note that there is a file included in the project that you did not create: `package.json`. It was created by `npm init` and contains information about modules and dependencies used in your project. 
+
+It is yet another convention to run test files with `npm test`. We can modify our package.json to make it possible. Open package.json and change `"test"` section in the following way making sure you use your test file name:
+
+```js
+  "scripts": {
+    "test": "tape ./index.test.js"
+  },
+  ```
 
 
 
