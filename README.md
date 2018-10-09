@@ -167,14 +167,25 @@ Your should see the TAP output of your first test. Remember that file name shoul
 
 Note that there is a file included in the project that you did not create: `package.json`. It was created by `npm init` and contains information about modules and dependencies used in your project. 
 
-It is yet another convention to run test files with `npm test`. We can modify our package.json to make it possible. Open package.json and change `"test"` section in the following way making sure you use your test file name:
+It is yet another convention to run test files with `npm test`. We can modify our package.json to make it possible. Open package.json and change the `"test"` property in the following way making sure you use your test file name:
 
 ```js
   "scripts": {
     "test": "tape ./index.test.js"
   },
   ```
+Now you can run your test from the terminal by typing:
 
+```sh
+npm test
+```
+Actually, you can make it shorter:
 
+```sh
+npm t
+```
 
 ## Your first tests
+
+Now you are ready to write some code and test it. How about writing and testing a program that outputs a list of prime numbers, from ***0*** to ***n***?
+
