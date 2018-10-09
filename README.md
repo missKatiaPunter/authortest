@@ -12,7 +12,7 @@ function addTwoAndThree() {
 ```
 Tape is known as the ‘bare minimum’ testing framework. As such it is lightweight, with no configuration required and free from global variables such as `describe`. Tests produced with Tape are JavaScript files and can run in Node or in a browser.
 
-Tape produces **TAP output**. **TAP** stands for **Test Anything Protocol**, it is documented [*here*](https://testanything.org/). It was originally designed to test Perl code in the late 1980s. A protocol is a standardised way of doing something, in case of TAP reporting the outcome of unit tests. A classic example of a protocol is meeting the Queen: call her ‘Ma’am’ (like in *"jam"*). TAP prescribes the following reporting from a test:
+Tape produces **TAP output**. **TAP** stands for **Test Anything Protocol**; it is documented [*here*](https://testanything.org/). It was originally designed to test Perl code in the late 1980s. A protocol is a standardised way of doing something, in case of TAP reporting the outcome of unit tests. A classic example of a protocol is meeting the Queen: call her ‘Ma’am’ (like in *"jam"*). TAP prescribes the following reporting from a test:
 
 + 1..***n*** reports the number of tests run with n being the number of tests
 + **ok 1** <message> - means that the frst test was successful
