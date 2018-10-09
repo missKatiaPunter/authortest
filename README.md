@@ -214,7 +214,7 @@ function isPrime(n) {
 }
 ```
 
-it should be written in your index.js file. In order to make it available in your index.test.js file you need to add `module.exports` statement at the end of your JavaScript file:
+It should be written in your index.js file. In order to make it available in your index.test.js file you need to add a `module.exports` statement at the end of your JavaScript file:
 
 ```js
 function isPrime(n) {
@@ -224,7 +224,7 @@ function isPrime(n) {
 }
 module.exports = isPrime;
 ```
-Now you need to `require` your module containing function `isPrime(n)` in yout test file. Moreover, you also need to `require` tape in your test file. Your first test will have to have two `require` statements at the start and some tests. Traditionally the first test should check that Tape is working. 
+Now you need to `require` your module containing function `isPrime(n)` in yout test file. Moreover, you also need to `require` tape in your test file. Your first test will have to have two `require` statements at the start and some tests. Traditionally, the first test should check that Tape is working. 
 
 ```js
 var test = require("tape");
@@ -240,4 +240,74 @@ test("Check that 7 is a prime number", function (t) {
   t.end();
 });
 ```
-Now you can run your first test.
+Note that the names `test` and `t` are arbitrary; they are variable names.
+
+Now you can run your first test that tests actual code. Using snippets of assertions above you can write more of your own tests for function isPrime(n).
+
+We know that negative numbers cannot be prime. We should probably test our function for the output with negative numbers. But if we add assertion `t.notOk(isPrime(-9), '-9 is not a prime');` the test will fail. That means the code itself was wrong. This situation illustrates the idea of **Test Driven Development** - first write a failing test and then write or re-write a unit to make the test pass. We should refactor our code to make our new test pass, for example:
+
+```js
+function isPrime(n) {
+  if (n % 1 || n < 2) return false;
+  for (var i = 2; i <= Math.sqrt(n); i++)
+    if (n % i == 0) return false;
+  return true;
+}
+```
+You can now test function isPrime(n) with an argument 'cat'. What result do you expect? Is actual equal expected? You can continue testing and refactoring your function with different arguments (edge cases).
+
+The second function of the program should use function isPrime(n) in order to generate a list of primes from ***0*** to ***n***. To export two functions from the same file we have to assign an object containing reference to both functions to `module.exports` as so:
+
+```js
+function primelist(num) {
+  let res = [];
+  for (let i = 2; i <= num; i++)
+    if (isPrime(i)) res.push(i);
+  return res;
+}
+
+function isPrime(n) {
+  if (n % 1 || n < 2) return false;
+  for (var i = 2; i <= Math.sqrt(n); i++)
+    if (n % i == 0) return false;
+  return true;
+}
+
+module.exports = { primelist, isPrime };
+```
+If we run our old tests now they will fail. We need to use dot notation or [*destructuring assignment*](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) to make both functions available in test file. With dot notation our tests will be:
+
+```js
+var test = require("tape");
+var primes = require("./index.js");
+
+test("Check how Boolean assertions work", function (t) {
+  t.ok(true, 'True is true');
+  t.end();
+});
+
+test("Check that primes identify correctly", function (t) {
+  t.ok(primes.isPrime(7), '7 is a prime');
+  t.notOk(primes.isPrime(-9), '-9 is not a prime');
+  t.end();
+});
+```
+
+With destructuring assignment:
+
+```js
+var test = require("tape");
+var { isPrime, primes } = require("./index.js");
+
+test("Check how Boolean assertions work", function (t) {
+  t.ok(true, 'True is true');
+  t.end();
+});
+
+test("Check that primes identify correctly", function (t) {
+  t.ok(isPrime(7), '7 is a prime');
+  t.notOk(isPrime(-9), '-9 is not a prime');
+  t.end();
+});
+```
+
