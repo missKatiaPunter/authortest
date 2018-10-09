@@ -156,7 +156,7 @@ Make sure you type these from within your project folder, in the terminal. `pwd`
 
 In order to complete the set up it is important to write your first test. Like all snipets provided above it does not have to be testing any actual code. The example below uses Visual Studio Code and assertion `ok()`:
 
-![visual-studio-test1](https://user-images.githubusercontent.com/18426161/46682246-f056c300-cbe4-11e8-9e29-58d26f99ab02.png)
+![visual-studio-test1](https://user-images.githubusercontent.com/18426161/46682807-80493c80-cbe6-11e8-8275-9d1fa01d9426.png)
 
 
 
