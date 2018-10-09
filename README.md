@@ -77,7 +77,7 @@ test("Testing equality assertion", function (t) {
 ```
 throwing the following exception:
 
-![exception-from-equal](https://user-images.githubusercontent.com/18426161/46674800-f80e6b80-cbd4-11e8-89cf-271a720b12d9.png)
+![exception-from-equal](https://user-images.githubusercontent.com/18426161/46675291-00b37180-cbd6-11e8-9217-60ec37153fb0.png)
 
 
 ## Setting up the environment
