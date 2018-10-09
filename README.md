@@ -71,7 +71,7 @@ The snippet above shows a passing test. `equal()` takes two values and a success
 
 ```js
 test("Testing equality assertion", function (t) {
-  t.equal([1, 2, 3], [1, 2, 3], 'Working for 4+2=6');
+  t.equal([1, 2, 3], [1, 2, 3], 'Two arrays are equal');
   t.end();
 });
 ```
