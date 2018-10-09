@@ -138,4 +138,8 @@ touch index.test.js
 ```
 > Note: name.test.js is a naming convention for test files. Following naming convention is optional, but a good practice.
 
+To write your JS code and your tests you need to open your project in the text editor of your choice, for example,  [*Atom*](https://atom.io/) or [*Visual Studio Code*](https://code.visualstudio.com/). 
+
+To open a project in Atom: `atom .` and in VS Code `code .`. Make sure your type these from within your project folder, in the terminal. `pwd` to check if you are in the right folder.
+
 ## Your first tests
