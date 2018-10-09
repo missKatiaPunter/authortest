@@ -297,7 +297,7 @@ With destructuring assignment:
 
 ```js
 var test = require("tape");
-var { isPrime, primes } = require("./index.js");
+var { isPrime, primelist } = require("./index.js");
 
 test("Check how Boolean assertions work", function (t) {
   t.ok(true, 'True is true');
