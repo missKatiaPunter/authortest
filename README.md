@@ -189,3 +189,17 @@ npm t
 
 Now you are ready to write some code and test it. How about writing and testing a program that outputs a list of prime numbers, from ***0*** to ***n***?
 
+You can, for example, do it in the following way:
+
+```js
+function prime(num) {
+  var primes = [];
+  loop: for (var i = 2; i <= num; i++) {
+    for (var j = 0; j <= primes.length; j++)
+      if (i % primes[j] === 0) continue loop;
+    primes.push(i);
+  }
+  return primes;
+}
+```
+It would work and would even impress (not many know labels, i.e. `loop`). However, testing this code would be a nightmare. To make testing and subsequently debugging easier it is better to split the code into multiple (at least two) functions. 
