@@ -24,6 +24,18 @@ The screenshot below shows the TAP output produced by running two successful tes
 
 Failing tests will produce exceptions, messages outlining why tests were not successful. If one previously experienced a less minimalist testing framework they might be left disappointed: standard TAP output has no color coding, no timings, no file or function names, no line numbers. On the brighter side, if one is used to deciphering TAP output for JavaScript test, they will be able to understand TAP producing tests of other programming languages.
 
+Another limitation of Tape and TAP is a small number of built-in assertions. Built-in assertions are methods included in the testing library that allow to compare the expected outcome of a unit with its actual outcome.
+
+### Boolean assertions included in Tape
+
+```js
+var test = require("tape");
+
+test("Check that true is truthy", function (t) {
+  t.ok(true, 'True is true');
+  t.end();
+});
+```
 
 ## Setting up the environment
 
