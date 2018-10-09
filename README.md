@@ -18,9 +18,12 @@ Tape produces **TAP output**. **TAP** stands for **Test Anything Protocol**, it 
 + **ok 1** <message> - means that the frst test was successful
 + **not ok 2**  <message> - means that the second test failed
 
-The screenshot below shows the TAP output of running two successful tests.
+The screenshot below shows the TAP output produced by running two successful tests. The words ‘Test description’ are placeholders, here the test author should write concise and meaningful explanations of functionality being tested.
 
 ![tap-output](https://user-images.githubusercontent.com/18426161/46638963-61ea2f00-cb5b-11e8-9d5c-383f92c53b22.png)
+
+Failing tests will produce exceptions, messages outlining why tests were not successful. If one previously experienced a less minimalist testing framework they might be left disappointed: standard TAP output has no color coding, no timings, no file or function names, no line numbers. On the brighter side, if one is used to deciphering TAP output for JavaScript test, they will be able to understand TAP producing tests of other programming languages.
+
 
 ## Setting up the environment
 
