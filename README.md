@@ -310,4 +310,4 @@ test("Check that primes identify correctly", function (t) {
   t.end();
 });
 ```
-
+Now you can use code snippets of deepEqual() to test function `primelist()`.
