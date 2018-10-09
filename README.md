@@ -34,18 +34,25 @@ test("Check that true is truthy", function (t) {
   t.end();
 });
 ```
-The code snippet above uses Boolean assertion `ok`. It has a single test and a single assertion. `ok` takes a ***single*** value and a success message as parameters. The test output now displays a custom test description `"Check that true is truthy"`and a success message `"True is true"`:
+The code snippet above uses Boolean assertion `ok`. It has a single test and a single assertion. `ok` takes a ***single*** value and a success message as parameters. The test output now displays the custom test description `"Check that true is truthy"` and the success message `"True is true"`:
 
 ![tap-first-boolean](https://user-images.githubusercontent.com/18426161/46670202-7107c600-cbc9-11e8-83ef-02d5c32eae44.png)
 
-You can add multiple assertions to a single test:
+You can add multiple assertions to a single test and use `notOk` to check values expected to be falsy. Remember to be mindful of JavaScript [*type coercion*](https://medium.freecodecamp.org/js-type-coercion-explained-27ba3d9a2839) when asserting Booleans.
 
 ```js
-test("Check that true is truthy", function (t) {
+test("Check how Boolean assertions work", function (t) {
   t.ok(true, 'True is true');
+  t.notOk(4 < 2, 'Four is not greater than 2');
+  t.ok(typeof 'cat' !== Number, 'Cat is not a number');
+  t.notOk([1, 2, 3, 4].length === 3, 'The length of array [1,2,3,4] is not 3');
   t.end();
 });
 ```
+
+In TAP output test descriptions are preceded by `#`, whereas assertion success messages follow `ok`.
+
+
 ## Setting up the environment
 
 ## Your first tests
