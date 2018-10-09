@@ -140,6 +140,19 @@ touch index.test.js
 
 To write your JS code and your tests you need to open your project in the text editor of your choice, for example,  [*Atom*](https://atom.io/) or [*Visual Studio Code*](https://code.visualstudio.com/). 
 
-To open a project in Atom: `atom .` and in VS Code `code .`. Make sure your type these from within your project folder, in the terminal. `pwd` to check if you are in the right folder.
+To open a project in Atom: 
+
+```sh
+atom .
+``` 
+
+and in VS Code:
+
+```sh
+code .
+```
+
+Make sure you type these from within your project folder, in the terminal. `pwd` to check if you are in the right folder.
+
 
 ## Your first tests
