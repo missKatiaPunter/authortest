@@ -151,6 +151,7 @@ and in VS Code:
 ```sh
 code .
 ```
+You may need to set up code command for Mac OS, find instructions [*here*](https://code.visualstudio.com/docs).
 
 Make sure you type these from within your project folder, in the terminal. Use `pwd` to check if you are in the right folder.
 
