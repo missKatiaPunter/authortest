@@ -30,11 +30,11 @@ Another limitation of Tape and TAP is a small number of built-in assertions. Bui
 
 ```js
 test("Check that true is truthy", function (t) {
-  t.ok(true, 'True is true');
+  t.ok(true, "True is true");
   t.end();
 });
 ```
-The code snippet above uses Boolean assertion `ok`. It has a single test and a single assertion. `ok` takes a ***single*** value and a success message as parameters. The test output:
+The code snippet above uses Boolean assertion `ok`. It has a single test and a single assertion. `ok` takes a ***single*** value and a success message as parameters. The test output now displays a custom test description `"Check that true is truthy"`and a success message `"True is true"`:
 
 ![tap-first-boolean](https://user-images.githubusercontent.com/18426161/46670202-7107c600-cbc9-11e8-83ef-02d5c32eae44.png)
 
