@@ -320,3 +320,4 @@ Now you can use code snippets of deepEqual() to test function `primelist()`.
 + [Unit testing Node.js with Tape by Diogo Splinola](https://hackernoon.com/unit-testing-node-js-38cf2b7e1a41)
 + [Unit Testing with Tape by James Anaipakos](https://jamesanaipakos.com/2016-03-01-unit-testing-with-tape)
 + [An Overview of JavaScript Testing in 2018](https://medium.com/welldone-software/an-overview-of-javascript-testing-in-2018-f68950900bc3)
++ [DWYL - learn Tape tutorial](https://github.com/dwyl/learn-tape)
