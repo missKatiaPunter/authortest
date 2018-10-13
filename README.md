@@ -316,3 +316,5 @@ Now you can use code snippets of deepEqual() to test function `primelist()`.
 ### References: 
 + [Unit Testing JavaScript Applications With Tape by Andy Neale](https://medium.com/@andy.neale/unit-testing-javascript-applications-with-tape-1d4f5d5fc825)
 + [Stack Overflow discussion - what do developers want to see in TAP output](https://stackoverflow.com/questions/91585/what-do-you-need-from-a-test-harness)
++ [Testling Guide to Tape] (https://ci.testling.com/guide/tape)
++ [Unit testing Node.js with Tape by Diogo Splinola](https://hackernoon.com/unit-testing-node-js-38cf2b7e1a41)
