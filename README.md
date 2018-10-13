@@ -313,4 +313,4 @@ test("Check that primes identify correctly", function (t) {
 ```
 Now you can use code snippets of deepEqual() to test function `primelist()`.
 
-> References: ![Unit Testing JavaScript Applications With Tape by Andy Neale](https://medium.com/@andy.neale/unit-testing-javascript-applications-with-tape-1d4f5d5fc825)
+### References: [Unit Testing JavaScript Applications With Tape by Andy Neale](https://medium.com/@andy.neale/unit-testing-javascript-applications-with-tape-1d4f5d5fc825)
